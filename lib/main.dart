@@ -33,7 +33,11 @@ class Task {
 }
 
 class MyAppState extends ChangeNotifier {
-  List<Task> _tasks = [];
+  List<Task> _tasks = [
+    Task(name: 'Siivous', status: false),
+    Task(name: 'Treeni', status: false),
+    Task(name: 'Kauppa', status: true)
+  ];
 
   List<Task> get tasks => _tasks;
 
@@ -77,6 +81,9 @@ class MyHomePage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AddTask(),
+              SizedBox(
+                width: 10.0,
+              ),
               ClearTasks(),
             ],
           ),
