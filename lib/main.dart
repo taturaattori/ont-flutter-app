@@ -36,7 +36,9 @@ class MyAppState extends ChangeNotifier {
   List<Task> _tasks = [
     Task(name: 'Siivous', status: false),
     Task(name: 'Treeni', status: false),
-    Task(name: 'Kauppa', status: true)
+    Task(name: 'Kauppa', status: true),
+    Task(name: 'Opiskelu', status: false),
+    Task(name: 'Roskat', status: true),
   ];
 
   List<Task> get tasks => _tasks;
